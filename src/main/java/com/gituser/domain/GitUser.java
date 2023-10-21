@@ -5,7 +5,6 @@ import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.time.LocalDateTime;
 
 @Getter
 @Builder
@@ -15,7 +14,7 @@ public class GitUser {
     private final String name;
     private final String type;
     private final String avatarUrl;
-    private final LocalDateTime createdAt;
+    private final String createdAt;
     private final BigDecimal calculations;
 
     public static class GitUserBuilder {
@@ -42,11 +41,6 @@ public class GitUser {
         private BigDecimal convertToBigDecimal(Integer givenInteger) {
             return BigDecimal.valueOf(givenInteger)
                     .setScale(DECIMAL_SCALE, RoundingMode.HALF_UP);
-        }
-
-        public GitUserBuilder createdAt(final String createdAt) {
-            this.createdAt = LocalDateTime.parse(createdAt);
-            return this;
         }
     }
 }

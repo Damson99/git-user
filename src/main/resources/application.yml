@@ -3,4 +3,8 @@ server:
 
 web-client:
   github-api-base: https://api.github.com
-  github-api-user-info: /users/damson99
+  github-api-user-info: /users/
+
+springdoc:
+  swagger-ui:
+    path: /

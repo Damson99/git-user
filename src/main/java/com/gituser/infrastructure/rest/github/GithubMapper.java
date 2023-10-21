@@ -1,4 +1,4 @@
-package com.gituser.infrastructure.github;
+package com.gituser.infrastructure.rest.github;
 
 import com.gituser.domain.GitUser;
 

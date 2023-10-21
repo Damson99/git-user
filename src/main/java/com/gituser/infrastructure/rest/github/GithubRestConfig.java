@@ -1,4 +1,4 @@
-package com.gituser.infrastructure.github;
+package com.gituser.infrastructure.rest.github;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
