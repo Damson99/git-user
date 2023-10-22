@@ -16,9 +16,11 @@ class RequestOccurrenceAggregator {
                 : occurrence.increment());
     }
 
-    synchronized Set<UserRequestOccurrence> collect() {
-        final Set<UserRequestOccurrence> userRequestOccurrences = Set.copyOf(USER_REQUEST_OCCURRENCES.values());
-        USER_REQUEST_OCCURRENCES.clear();
-        return userRequestOccurrences;
+     Set<UserRequestOccurrence> collect() {
+        synchronized (this) {
+            final Set<UserRequestOccurrence> userRequestOccurrences = Set.copyOf(USER_REQUEST_OCCURRENCES.values());
+            USER_REQUEST_OCCURRENCES.clear();
+            return userRequestOccurrences;
+        }
     }
 }

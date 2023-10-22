@@ -8,3 +8,6 @@ web-client:
 springdoc:
   swagger-ui:
     path: /
+
+aggregator:
+  time-window-for-saving-occurrences-ms: 7200000
