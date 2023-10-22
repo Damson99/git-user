@@ -1,5 +1,6 @@
 package com.gituser.domain
 
+import com.gituser.domain.user.GitUser
 import spock.lang.Specification
 import spock.lang.Subject
 

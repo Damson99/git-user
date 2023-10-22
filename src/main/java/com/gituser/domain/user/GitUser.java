@@ -1,4 +1,4 @@
-package com.gituser.domain;
+package com.gituser.domain.user;
 
 import lombok.Builder;
 import lombok.Getter;

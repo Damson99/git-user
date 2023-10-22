@@ -1,4 +1,4 @@
-package com.gituser.domain;
+package com.gituser.domain.user;
 
 public interface GitUserProvider {
 

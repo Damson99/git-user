@@ -2,7 +2,7 @@ package com.gituser.infrastructure.resource.api.user;
 
 import com.gituser.application.user.GetUsernameCommand;
 import com.gituser.application.user.UserApplicationService;
-import com.gituser.domain.GitUser;
+import com.gituser.domain.user.GitUser;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

@@ -1,3 +1,3 @@
-package com.gituser.domain;
+package com.gituser.domain.user;
 
 public record GitUsername(String username) {}

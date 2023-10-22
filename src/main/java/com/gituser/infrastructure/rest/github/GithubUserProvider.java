@@ -1,8 +1,8 @@
 package com.gituser.infrastructure.rest.github;
 
-import com.gituser.domain.GitUser;
-import com.gituser.domain.GitUserProvider;
-import com.gituser.domain.GitUsername;
+import com.gituser.domain.user.GitUser;
+import com.gituser.domain.user.GitUserProvider;
+import com.gituser.domain.user.GitUsername;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatusCode;

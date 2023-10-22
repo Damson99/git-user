@@ -1,6 +1,6 @@
 package com.gituser.infrastructure.rest.github;
 
-import com.gituser.domain.GitUser;
+import com.gituser.domain.user.GitUser;
 
 class GithubMapper {
 
