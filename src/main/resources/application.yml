@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+web-client:
+  github-api-base: https://api.github.com
+  github-api-user-info: /users/
+
+springdoc:
+  swagger-ui:
+    path: /
+
+aggregator:
+  time-window-for-saving-occurrences-ms: 3600000
+
+spring:
+  data:
+    mongodb:
+      host: ${DB_HOST:localhost}
+      port: ${DB_PORT:27017}
+      database: ${DB_NAME:gituser}
+      username: ${DB_USERNAME:gituser_user_db}
+      password: ${DB_PASSWORD:gituser_password_db}
