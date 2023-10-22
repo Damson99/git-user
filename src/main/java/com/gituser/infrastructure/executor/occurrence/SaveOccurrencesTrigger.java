@@ -10,7 +10,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 class SaveOccurrencesTrigger {
     private final OccurrenceDomainService occurrenceDomainService;
 
-    @Scheduled(fixedRateString = "{aggregator.time-window-for-saving-occurrences}")
+    @Scheduled(fixedRateString = "${aggregator.time-window-for-saving-occurrences-ms}")
     void saveAggregatedUserOccurrences() {
         log.info("saving collected data from request occurrences aggregator");
         occurrenceDomainService.saveCollectedRequestOccurrences();

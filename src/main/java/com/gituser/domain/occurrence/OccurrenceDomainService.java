@@ -3,6 +3,7 @@ package com.gituser.domain.occurrence;
 import com.gituser.domain.user.GitUsername;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.scheduling.annotation.Async;
 
 import java.util.Set;
 
@@ -12,6 +13,7 @@ public class OccurrenceDomainService {
     private final RequestOccurrenceAggregator requestOccurrenceAggregator;
     private final UserOccurrenceRepository userOccurrenceRepository;
 
+    @Async
     public void requestOccurredWith(GitUsername gitUsername) {
         requestOccurrenceAggregator.incrementFor(gitUsername);
     }
